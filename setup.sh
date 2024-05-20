@@ -13,7 +13,6 @@ git pull
 echo "install brewfile"
 brew bundle
 
-
 echo "stowing dotfiles"
 
 echo "nvim"
@@ -25,3 +24,6 @@ stow oh-my-zsh -t $HOME/
 
 echo "iterm2"
 stow iterm2 -t ~/Library/Application\ Support/iTerm2/DynamicProfiles
+
+echo "tmux"
+stow tmux -t $HOME/
