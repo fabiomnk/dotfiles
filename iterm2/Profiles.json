@@ -252,7 +252,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.55789834260940552
   },
-  "Custom Command" : "No",
+  "Custom Command" : "Yes",
   "Jobs to Ignore" : [
     "rlogin",
     "ssh",
@@ -372,7 +372,7 @@
     "Alpha Component" : 1,
     "Green Component" : 1
   },
-  "Command" : "",
+  "Command" : "\/opt\/homebrew\/bin\/tmux",
   "Minimum Contrast (Light)" : 0,
   "Blend" : 0.369140625,
   "Character Encoding" : 4,
