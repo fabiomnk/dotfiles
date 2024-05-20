@@ -1,0 +1,6 @@
+# dotfiles
+
+## Requirements
+
+- install brew 
+
