@@ -27,3 +27,8 @@ stow iterm2 -t ~/Library/Application\ Support/iTerm2/DynamicProfiles
 
 echo "tmux"
 stow tmux -t $HOME/
+echo "tpm"
+mdkir -p $HOME/.tmux/plugins
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+
