@@ -27,8 +27,16 @@ stow iterm2 -t ~/Library/Application\ Support/iTerm2/DynamicProfiles
 
 echo "tmux"
 stow tmux -t $HOME/
+
 echo "tpm"
 mdkir -p $HOME/.tmux/plugins
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
+echo "yabai"
+mkdir $HOME/.config/yabai
+stow yabai -t $HOME/.config/yabai
 
+
+echo "skhd"
+mkdir $HOME/.config/skhd
+stow skhd -t $HOME/.config/skhd
