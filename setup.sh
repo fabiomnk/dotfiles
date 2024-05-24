@@ -40,3 +40,8 @@ stow yabai -t $HOME/.config/yabai
 echo "skhd"
 mkdir $HOME/.config/skhd
 stow skhd -t $HOME/.config/skhd
+
+
+echo "alacritty"
+mkdir $HOME/.config/alacritty
+stow alacritty -t $HOME/.config/alacritty
