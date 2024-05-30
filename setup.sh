@@ -44,3 +44,8 @@ stow skhd -t $HOME/.config/skhd
 echo "alacritty"
 mkdir $HOME/.config/alacritty
 stow alacritty -t $HOME/.config/alacritty
+
+
+echo "lazygit"
+rm  "$HOME/Library/Application Support/lazygit/config.yml"
+stow lazygit -t "$HOME/Library/Application Support/lazygit"
