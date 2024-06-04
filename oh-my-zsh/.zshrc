@@ -114,3 +114,10 @@ alias vi="nvim"
 
 
 bindkey -r "^S"
+
+
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+
+
+

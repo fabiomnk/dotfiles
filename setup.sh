@@ -16,6 +16,7 @@ brew bundle
 echo "stowing dotfiles"
 
 echo "nvim"
+mkdir $HOME/.config
 mkdir $HOME/.config/nvim
 stow nvim -t $HOME/.config/nvim
 
@@ -29,7 +30,7 @@ echo "tmux"
 stow tmux -t $HOME/
 
 echo "tpm"
-mdkir -p $HOME/.tmux/plugins
+mkdir -p $HOME/.tmux/plugins
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 echo "yabai"
@@ -49,3 +50,19 @@ stow alacritty -t $HOME/.config/alacritty
 echo "lazygit"
 rm  "$HOME/Library/Application Support/lazygit/config.yml"
 stow lazygit -t "$HOME/Library/Application Support/lazygit"
+
+
+
+echo "Krew"
+(
+  set -x; cd "$(mktemp -d)" &&
+  OS="$(uname | tr '[:upper:]' '[:lower:]')" &&
+  ARCH="$(uname -m | sed -e 's/x86_64/amd64/' -e 's/\(arm\)\(64\)\?.*/\1\2/' -e 's/aarch64$/arm64/')" &&
+  KREW="krew-${OS}_${ARCH}" &&
+  curl -fsSLO "https://github.com/kubernetes-sigs/krew/releases/latest/download/${KREW}.tar.gz" &&
+  tar zxvf "${KREW}.tar.gz" &&
+  ./"${KREW}" install krew
+)
+
+
+
