@@ -64,5 +64,7 @@ echo "Krew"
   ./"${KREW}" install krew
 )
 
-
+echo "kubectl krew plugins"
+$HOME/.krew/bin/kubectl-krew install ctx
+$HOME/.krew/bin/kubectl-krew install ns
 
