@@ -8,8 +8,8 @@ TERM = "xterm-256color"
 [window]
 decorations = "buttonless"
 dynamic_padding = false 
-opacity = 0.8
-blur = true
+opacity = 0.85
+blur = true 
 
 [window.padding]
 x = 10
@@ -32,8 +32,3 @@ style = "Medium Italic"
 
 [font.normal]
 family = "JetBrainsMono Nerd Font"
-style = "Medium"
-
-
-
-
