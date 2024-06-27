@@ -7,5 +7,6 @@ return {
     -- refer to the configuration section below
   },
   config = function()
+    require('todo-comments').setup()
   end
 }
