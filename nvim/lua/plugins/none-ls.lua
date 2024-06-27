@@ -7,6 +7,7 @@ return {
       sources = {
         null_ls.builtins.formatting.stylua,
         null_ls.builtins.diagnostics.terraform_validate,
+        null_ls.builtins.formatting.terraform_fmt,
         --null_ls.builtins.formatting.rego,
         null_ls.builtins.formatting.prettier,
         --null_ls.builtins.formatting.d2_fmt
