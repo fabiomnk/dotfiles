@@ -12,7 +12,8 @@ return {
         "yaml",
         "go",
         "rego",
-        "robot" },
+        "robot",
+      },
       auto_install = true,
       highlight = { enable = true },
       indent = { enable = true }
