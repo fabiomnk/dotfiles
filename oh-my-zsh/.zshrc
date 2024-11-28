@@ -119,3 +119,8 @@ bindkey -r "^S"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+source <(kubectl completion zsh)
+
+export GPG_TTY=$(tty)
+
