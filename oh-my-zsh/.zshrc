@@ -124,3 +124,6 @@ source <(kubectl completion zsh)
 
 export GPG_TTY=$(tty)
 
+export DOCKER_HOST=unix:///var/folders/qd/6dm828_x42sbhfq72nq6y3vr0000gp/T/podman/podman-machine-default-api.sock
+
+alias docker="podman"

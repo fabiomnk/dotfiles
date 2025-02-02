@@ -10,6 +10,7 @@ return {
         null_ls.builtins.formatting.terraform_fmt,
         --null_ls.builtins.formatting.rego,
         null_ls.builtins.formatting.prettier,
+        null_ls.builtins.diagnostics.golangci_lint
         --null_ls.builtins.formatting.d2_fmt
 --        null_ls.builtins.,
       },

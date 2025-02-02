@@ -9,4 +9,4 @@ return {
     vim.keymap.set("n","<leader>mpt", ":MarkdownPreviewToggle<CR>", {})
     vim.keymap.set("n","<leader>mps", ":MarkdownPreviewStop<CR>", {})
   end
-}
+  }
