@@ -127,3 +127,6 @@ export GPG_TTY=$(tty)
 export DOCKER_HOST=unix:///var/folders/qd/6dm828_x42sbhfq72nq6y3vr0000gp/T/podman/podman-machine-default-api.sock
 
 alias docker="podman"
+
+# Created by `pipx` on 2025-03-27 17:15:18
+export PATH="$PATH:/Users/fabio.mancini/.local/bin"

@@ -14,7 +14,7 @@ return {
 				"rego",
 				"robot",
 				"gotmpl",
-				"helm",
+				"helm"
 			},
 			auto_install = true,
 			highlight = { enable = true },
