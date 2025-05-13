@@ -119,12 +119,14 @@ bindkey -r "^S"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+export PATH="$HOME/go/bin/:$PATH"
+
 
 source <(kubectl completion zsh)
 
 export GPG_TTY=$(tty)
 
-export DOCKER_HOST=unix:///var/folders/qd/6dm828_x42sbhfq72nq6y3vr0000gp/T/podman/podman-machine-default-api.sock
+export DOCKER_HOST='unix:///var/folders/qd/6dm828_x42sbhfq72nq6y3vr0000gp/T/podman/podman-machine-default-api.sock'
 
 alias docker="podman"
 

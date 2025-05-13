@@ -24,5 +24,15 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- In your init.lua
+vim.diagnostic.config({
+  virtual_text = false,
+  virtual_lines = true,
+  signs = true,
+  underline = true,
+  update_in_insert = false,
+  severity_sort = false,
+})
+
 
 require("lazy").setup("plugins")
