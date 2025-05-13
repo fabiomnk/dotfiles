@@ -23,19 +23,19 @@ return {
         capabilities = capabilities,
       })
       -- terraformls
-      lspconfig.terraformls.setup({
-        capabilities = capabilities,
-      })
-      vim.api.nvim_create_autocmd({ "BufWritePre" }, {
-        pattern = { "*.tf", "*.tfvars" },
-        callback = function()
-          vim.lsp.buf.format()
-        end,
-      })
+      --lspconfig.terraformls.setup({
+      --  capabilities = capabilities,
+      --})
+      --vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+      --  pattern = { "*.tf", "*.tfvars" },
+      --  callback = function()
+      --    vim.lsp.buf.format()
+      --  end,
+      --})
       -- terraformls
-      lspconfig.tflint.setup({
-        capabilities = capabilities,
-      })
+      --lspconfig.tflint.setup({
+      --  capabilities = capabilities,
+      --})
       lspconfig.regols.setup({
         capabilities = capabilities,
       })
