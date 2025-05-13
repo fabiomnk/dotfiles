@@ -55,6 +55,8 @@ return {
           },
         },
       })
+      -- disable logging 
+      vim.lsp.set_log_level("off")
 
       --vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
