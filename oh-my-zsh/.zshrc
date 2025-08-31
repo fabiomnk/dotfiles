@@ -132,3 +132,8 @@ alias docker="podman"
 
 # Created by `pipx` on 2025-03-27 17:15:18
 export PATH="$PATH:/Users/fabio.mancini/.local/bin"
+
+
+# kubebuilder completion
+source $HOME/.kubebuilder/completion.zsh
+
